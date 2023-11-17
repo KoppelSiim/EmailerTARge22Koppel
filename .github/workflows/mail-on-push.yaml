@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send mail
-        uses: KoppelSiim/action-send-mail@v3
+        uses: ${{ github.repository }}/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
