@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send mail
-        uses: ${{github.repository}}/action-send-mail@v3
+        uses: dawid66/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com 
+          server_address: smtp.gmail.com
           server_port: 465
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
-          subject: "Tana on reede" 
-          body: "Meil on tund" 
+          subject: "Tana on reede"
+          body: "Meil on tund"
           to: jyri.vaitmaa@tthk.ee
-          from: "Github actions"
+          from: "Github actions (${{ github.repository }})"
