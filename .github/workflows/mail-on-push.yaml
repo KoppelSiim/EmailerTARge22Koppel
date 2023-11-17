@@ -15,6 +15,6 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: "Tana on reede"
-          body: "Meil on tund"
+          body: "KMN:/"
           to: jyri.vaitmaa@tthk.ee
           from: "Github actions (${{ github.repository }})"
